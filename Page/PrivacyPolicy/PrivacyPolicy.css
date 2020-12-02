@@ -1,0 +1,25 @@
+body{
+	margin: 0px;
+}
+.No_Select_Strat{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.PageTitle{
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.Container{
+	line-height: 1.8em;
+    color: #fff;
+    padding: 15px 15px 50px 15px;
+    white-space: pre-line;
+    font-size: 17px;
+}

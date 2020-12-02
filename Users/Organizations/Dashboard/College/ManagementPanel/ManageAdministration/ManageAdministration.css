@@ -1,0 +1,59 @@
+body
+{
+  margin:0px;
+  padding:0px;
+}
+.No_Select_Strat
+{ 
+  -webkit-touch-callout: none; /* iOS Safari */ 
+  -webkit-user-select: none; /* Safari */ 
+  -khtml-user-select: none; /* Konqueror HTML */ 
+  -moz-user-select: none; /* Firefox */ 
+  -ms-user-select: none; /* Internet Explorer/Edge */ 
+  user-select: none; /* Non-prefixed version, currently supported 
+              by Chrome and Opera */ 
+}
+.PageTitle{
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.Container{
+  border: 5px solid #fff;
+  width: calc(100% - 50px);
+  max-width: 924px;
+  min-height: calc(100vh - 295px);
+  margin: 30px auto;
+  border-radius: 20px 0px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px 25px;
+}
+.button{
+  max-width: 310px;
+  border: 1px solid #0008ff;
+  min-height: 30px;
+  height: min-content;
+  width: 100%;
+  border-radius: 20px 0px;
+  background: #172b4d;
+  cursor: pointer;
+  margin: auto;
+}
+.button p{
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* Responsive device*/
+@media (max-width: 420px){
+  .Container{
+  grid-template-columns: 1fr;
+}
+}

@@ -1,0 +1,275 @@
+body
+{
+  margin:0px;
+  padding:0px;
+}
+select{
+  height: 25px;
+  color: #726a6a;
+  width: 100%;
+}
+input{
+  height: 18px;
+  padding: 3px 5px;
+  color: #726a6a;
+  width: calc(100% - 13px);
+}
+.No_Select_Strat{ 
+  -webkit-touch-callout: none; /* iOS Safari */ 
+  -webkit-user-select: none; /* Safari */ 
+  -khtml-user-select: none; /* Konqueror HTML */ 
+  -moz-user-select: none; /* Firefox */ 
+  -ms-user-select: none; /* Internet Explorer/Edge */ 
+  user-select: none; /* Non-prefixed version, currently supported 
+              by Chrome and Opera */ 
+}
+
+.PageTitle{
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto;
+}
+.Container{
+  border: 5px solid #fff;
+  width: calc(100% - 50px);
+  max-width: 980px;
+  min-height: calc(100vh - 295px);
+  margin: 30px auto;
+  border-radius: 20px 0px;
+  padding: 10px;
+}
+.FormA{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px 25px;
+  margin-bottom: 20px;
+}
+.FormB{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px 25px;
+  margin-bottom: 20px;
+}
+
+.SettingnBox{
+  border: 2px solid #fff;
+  height: min-content;
+  width: 100%;
+  border-radius: 0px 20px;
+}
+
+.SettingName{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background: #8e8e8e;
+  border-radius: 0px 20px 0px 0px;
+  text-align: center;
+}
+
+.SettingName-1{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.SettingBox-1{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+}
+.SettingBox-1A{
+	padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 0.83fr 20px;
+  grid-column-gap: 10px;
+}
+.SettingBox-1AA{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.SettingBox-1B{
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  grid-gap: 20px 5px;
+}
+.SettingBox-1C{
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr;
+  color: #fff;
+  grid-column-gap: 10px;
+}
+.SettingBox-2A{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 20px  1fr 20px;
+  grid-gap: 20px 10px;
+}
+.DtTl{
+  color: #fff;
+  background: #8e8e8e;
+  padding: 3px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.NewInputRemove{
+	width: 20px;
+	cursor: pointer;
+}
+.AddNewBtn{
+	border-top: 2px solid #fff;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding: 3px;
+	background: #8e8e8e;
+	cursor: pointer;
+}
+.SmtBtn{
+  border-top: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+  background: green;
+  cursor: pointer;
+  border-radius: 0px 0px 0px 20px;
+}
+/*
+important changes  
+ */
+.loader_round {
+  height: 32px;
+  width: 32px;
+}
+.loader_round::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  margin: auto;
+  background: #FFF;
+  border-radius: 50%;
+  -webkit-animation: loader_round-1 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+  animation: loader_round-1 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+@-webkit-keyframes loader_round-1 {
+  0%   { -webkit-transform: scale(0); opacity: 0; }
+  50%  { -webkit-transform: scale(1); opacity: 1; }
+  100% { -webkit-transform: scale(0); opacity: 0; }
+}
+@keyframes loader_round-1 {
+  0%   { transform: scale(0); opacity: 0; }
+  50%  { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0); opacity: 0; }
+}
+.loader_round span {
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  margin: auto;
+  height: 32px;
+  width: 32px;
+  -webkit-animation: loader_round-2 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+          animation: loader_round-2 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+@-webkit-keyframes loader_round-2 {
+  0%   { -webkit-transform: rotate(0deg); }
+  50%  { -webkit-transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes loader_round-2 {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+.loader_round span::before,
+.loader_round span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  margin: auto;
+  height: 12px;
+  width: 12px;
+  background: blue;
+  border-radius: 50%;
+  -webkit-animation: loader_round-3 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+          animation: loader_round-3 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+@-webkit-keyframes loader_round-3 {
+  0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
+  50%  { -webkit-transform: translate3d(-16px, 0, 0) scale(.5); }
+  100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
+}
+@keyframes loader_round-3 {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-16px, 0, 0) scale(.5); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+.loader_round span::after {
+  -webkit-animation: loader_round-4 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+          animation: loader_round-4 2s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+}
+@-webkit-keyframes loader_round-4 {
+  0%   { -webkit-transform: translate3d(0, 0, 0) scale(1); }
+  50%  { -webkit-transform: translate3d(16px, 0, 0) scale(.5); }
+  100% { -webkit-transform: translate3d(0, 0, 0) scale(1); }
+}
+@keyframes loader_round-4 {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(16px, 0, 0) scale(.5); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+.loader_button_center {
+  position: absolute;
+    margin: -3px 0px 0px 10px;
+}
+
+/* Responsive device*/
+@media (max-width: 580px){
+  input{
+    width: calc(100% - 12px);
+  }
+  .FormA{
+    grid-template-columns: 1fr;
+  }
+  .FormB{
+   grid-template-columns: 1fr;
+  }
+  .SettingBox-1{
+    grid-template-columns: 1fr;
+  }
+  .SettingBox-1B{
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    grid-gap: 20px 5px;
+  }
+  .SettingBox-1C{
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    color: #fff;
+    grid-column-gap: 10px;
+  }
+  .SettingBox-2A{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 20px  1fr 20px;
+    grid-gap: 20px 10px;
+  }
+}
