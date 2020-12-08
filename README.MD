@@ -1,0 +1,1 @@
+EsyManager is a platform where collage and school can register there institues and use facility of plateforms
